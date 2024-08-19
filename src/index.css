@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define the light and dark theme classes */
+body.light {
+    @apply bg-white text-black;
+  }
+  
+  body.dark {
+    @apply bg-gray-900 text-white;
+  }
+  
