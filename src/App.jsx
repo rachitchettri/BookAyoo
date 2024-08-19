@@ -6,6 +6,8 @@ import Books from './assets/components/Books';
 import Deals from './assets/components/Deals';
 import Login from './assets/components/Login';
 import Carts from './assets/components/Carts';
+import Register from './assets/components/Register';
+
 
 const App = () => {
   return (
@@ -16,7 +18,9 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Books" element={<Books />} />
           <Route path="/Deals" element={<Deals />} />
-          <Route path="/Login" element={<Login/>}/>
+          <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+       
           <Route path="/Deals" element={<Carts />} />
         </Routes>
       </div>

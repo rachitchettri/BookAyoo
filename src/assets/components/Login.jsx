@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'; // Adjust this based on your routing setup
+
 export default function Example() {
   return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-      <div className="text-indigo-800 text-2xl font-bold  text-center  ">
+        <div className="text-indigo-800 text-2xl font-bold text-center">
           BookAyoo
         </div>
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -65,9 +67,9 @@ export default function Example() {
 
           <p className="mt-10 text-center text-sm text-gray-500">
             Not a member?{' '}
-            <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-              Start a 14 day free trial
-            </a>
+            <Link to="/register" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+              Register
+            </Link>
           </p>
         </div>
       </div>
