@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import switchImageLight from './switch-light.png'; 
 import switchImageDark from './switch.png'; 

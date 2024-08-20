@@ -10,19 +10,19 @@ const Navbar = () => {
   return (
     <nav className="bg-white p-4 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        {/* NavLink for the "BookAyoo" text */}
         <NavLink
           to="/"
-          exact
-          className={({ isActive }) =>
-            `text-black text-2xl font-sans font-extrabold flex-grow cursor-pointer ${isActive ? "text-blue-500" : ""}`
-          }
+          className={({ isActive }) => 
+            `text-blue-800 text-2xl font-sans font-extrabold flex-grow cursor-pointer }`}
         >
           BookAyoo
         </NavLink>
         <button
           className="block lg:hidden px-3 py-2 text-black"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          aria-controls="navbar-menu"
         >
           <svg
             className="w-6 h-6"
@@ -40,11 +40,11 @@ const Navbar = () => {
           </svg>
         </button>
         <div
+          id="navbar-menu"
           className={`lg:flex lg:space-x-4 lg:items-center ${isOpen ? "block" : "hidden"}`}
         >
           <NavLink
             to="/Books"
-            exact
             className={({ isActive }) =>
               `text-black hover:bg-gray-200 px-3 py-2 rounded transition-colors ${isActive ? " text-blue-500" : ""}`
             }
@@ -53,7 +53,6 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/Deals"
-            exact
             className={({ isActive }) =>
               `text-black hover:bg-gray-200 px-3 py-2 rounded transition-colors ${isActive ? " text-blue-500" : ""}`
             }
@@ -62,7 +61,6 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/Carts"
-            exact
             className={({ isActive }) =>
               `text-black hover:bg-gray-200 px-3 py-2 rounded transition-colors flex items-center ${isActive ? " text-blue-500" : ""}`
             }
@@ -71,7 +69,6 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/Login"
-            exact
             className={({ isActive }) =>
               `text-black hover:bg-gray-200 px-3 py-2 rounded transition-colors flex items-center ${isActive ? " text-blue-500" : ""}`
             }
