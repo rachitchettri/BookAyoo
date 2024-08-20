@@ -1,9 +1,11 @@
-import React from 'react'
+// src/assets/components/Deals.js
+import React from 'react';
+import UnderConstruction from './underconstruction';
 
-const Carts = () => {
+const Carts = ({ underConstructionProps }) => {
   return (
-    <div>Cartcsdxvdfxs</div>
-  )
-}
+    <UnderConstruction {...underConstructionProps} />
+  );
+};
 
-export default Carts
+export default Carts;

@@ -1,9 +1,11 @@
-import React from 'react'
+// src/assets/components/Books.js
+import React from 'react';
+import UnderConstruction from './underconstruction';
 
-const Books = () => {
+const Books = ({ underConstructionProps }) => {
   return (
-    <div>Books</div>
-  )
-}
+    <UnderConstruction {...underConstructionProps} />
+  );
+};
 
-export default Books
+export default Books;
