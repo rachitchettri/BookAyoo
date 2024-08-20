@@ -1,16 +1,14 @@
-// src/App.js
 import React from 'react';
 import Footer from './footer';
-import Payment from './payment';
+import Contacts from './contacts';
 
 function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-grow pb-16">
+    <div className="min-h-screen flex flex-col m-0 p-0">
+      <main className="flex-grow">
         <h1 className="text-center text-2xl mt-10">Welcome to Bookayoo</h1>
-     
       </main>
-      <Payment/>
+      <Contacts/>
       <Footer />
     </div>
   );

@@ -1,18 +1,25 @@
-// src/Footer.js
 import React from 'react';
+import Payment from './Payment';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-black py-6 w-full">
-      <div className="px-4 md:px-8 max-w-screen-xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-7">
-          <p className="text-sm">
-            &copy; {new Date().getFullYear()} Rachit Chettri. All rights reserved.
+    <footer className="bg-gray-100 text-black w-full p-0 m-0">
+      {/* Payment section */}
+      <div className="w-full bg-white py-4 border-t border-gray-200">
+        <Payment />
+      </div>
+
+      {/* Footer content */}
+      <div className="w-full px-4 py-6 max-w-screen-lg mx-auto">
+     
+        <div className="flex items-center justify-center text-sm space-x-4 font-medium">
+          <p className="mb-0">
+            © {new Date().getFullYear()} Rachit Chettri. All rights reserved.
           </p>
-          <div className="flex space-x-4">
-            <a href="/terms-of-use" className="hover:text-blue-400">Terms of Use</a>
-            <a href="/privacy-policy" className="hover:text-blue-400">Privacy Policy</a>
-          </div>
+          <span>|</span>
+          <a href="#" className="hover:text-blue-700">Terms of Use</a>
+          <span>|</span>
+          <a href="#" className="hover:text-blue-700">Privacy Policy</a>
         </div>
       </div>
     </footer>

@@ -5,12 +5,15 @@ import ConnectIPS from './connectips.png'; // Import the local image
 import Khalti from './khalti.png'; // Import the local image
 import COD from './cod.png'; // Import the local image
 
+
 const Payment = () => {
   return (
-    <div className="p-4 max-w-4xl mx-auto">
-      <h2 className="text-lg font-semibold mb-4 text-center">Payment Options:</h2>
+    <div className="w-full mx-auto p-4 py-4 text-center">
+    
+   
       <div className="flex justify-center gap-4 flex-wrap">
         {/* Card 1: Esewa */}
+      <h2 className="text-lg font-semibold mb-4 text-center align-middle">Payment Options:</h2>
         <div className="relative bg-white border border-gray-200 rounded-lg shadow-md p-2 w-20 flex flex-col items-center group">
           <img 
             src={Esewa} 
@@ -54,7 +57,7 @@ const Payment = () => {
             className="w-8 h-8 object-contain"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg cursor-pointer">
-            <span className="text-xs">COD</span>
+            <span className="text-xs">Cash On Delivery</span>
           </div>
         </div>
       </div>
