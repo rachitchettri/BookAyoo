@@ -1,20 +1,21 @@
+/* Import external stylesheets first */
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+/* Tailwind CSS directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-  /* In your main CSS file (e.g., index.css) */
-  @import 'slick-carousel/slick/slick.css';
-  @import 'slick-carousel/slick/slick-theme.css';
-  
-/* Define the light and dark theme classes */
+/* Custom styles */
 body.light {
-    @apply bg-white text-black;
-  }
-  
-  body.dark {
-    @apply bg-gray-900 text-white;
-  }
-/* In your main CSS file (e.g., index.css) */
+  @apply bg-white text-black;
+}
+
+body.dark {
+  @apply bg-gray-900 text-white;
+}
+
 .slick-arrow {
   @apply absolute top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-800 p-2 rounded-full cursor-pointer;
 }
