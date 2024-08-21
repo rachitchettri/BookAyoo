@@ -17,7 +17,7 @@ body.dark {
 }
 
 .slick-arrow {
-  @apply absolute top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-800 p-2 rounded-full cursor-pointer;
+  @apply absolute top-1/2 transform -translate-y-1/2  p-2 rounded-full cursor-pointer;
 }
 
 .slick-prev {
@@ -26,4 +26,17 @@ body.dark {
 
 .slick-next {
   @apply right-2;
+}
+/* Tailwind CSS for Slick Arrows */
+.slick-arrow {
+  @apply absolute top-1/2 transform -translate-y-1/2  rounded-full flex items-center justify-center w-8 h-8;
+  z-index: 10;
+}
+
+.slick-prev {
+  @apply left-4; /* Adjust as needed */
+}
+
+.slick-next {
+  @apply right-4; /* Adjust as needed */
 }

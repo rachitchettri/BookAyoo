@@ -23,7 +23,7 @@ const Author = () => {
   };
 
   return (
-    <div className=" m-10">
+    <div className="m-10 relative">
       <div className='text-2xl font-bold mb-1 font-sans'>
         <span>Bestselling Authors</span>
       </div>
