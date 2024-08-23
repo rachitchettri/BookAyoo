@@ -20,10 +20,26 @@ const Author = () => {
     slidesToScroll: 1,
     nextArrow: <div className="slick-arrow slick-next">→</div>,
     prevArrow: <div className="slick-arrow slick-prev">←</div>,
+    responsive: [
+      {
+        breakpoint: 1024, // Tablet
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // Mobile
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="m-10 relative">
+    <div className="m-10 relative py-20">
       <div className='text-2xl font-bold mb-1 font-sans'>
         <span>Bestselling Authors</span>
       </div>
@@ -45,3 +61,4 @@ const Author = () => {
 }
 
 export default Author;
+
