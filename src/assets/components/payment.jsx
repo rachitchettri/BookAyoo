@@ -6,7 +6,7 @@ import Khalti from './khalti.png'; // Import the local image
 import COD from './cod.png'; // Import the local image
 
 
-const Payment = () => {
+const payment = () => {
   return (
     <div className="w-full mx-auto p-4 py-4 text-center">
     
@@ -65,4 +65,4 @@ const Payment = () => {
   );
 };
 
-export default Payment;
+export default payment;

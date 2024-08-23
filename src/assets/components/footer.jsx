@@ -1,5 +1,5 @@
 import React from 'react';
-import Payment from './Payment';
+import Payment from './payment';
 
 const Footer = () => {
   return (
@@ -11,7 +11,6 @@ const Footer = () => {
 
       {/* Footer content */}
       <div className="w-full px-4 py-6 max-w-screen-lg mx-auto">
-     
         <div className="flex items-center justify-center text-sm space-x-4 font-medium">
           <p className="mb-0">
             © {new Date().getFullYear()} Rachit Chettri. All rights reserved.
